@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Longest Word Finder</title>
+        <script>
+            function findLongestWord(sentene) {
+                var words = sentence.split(" ");
+
+                var longestWord = "";
+                var maxLength = 0;
+
+                for (var i = 0; i < words.length; i++) {
+
+                    if (words[i].length > maxLength) {
+                        longestWord = words[i];
+                        maxLength = words[i].length;
+                    }
+                }
+
+                return longestWord;
+            }
+
+            var sentence = "This is a sample sentence to test the function";
+            var longestWord = findLongestWord(sentence);
+            console.log("Longest word:", longestWord);
+        </script>
+    </head>
+
+    <body>
+    </body>
+
+    </html>
+
+</body>
+
+</html>

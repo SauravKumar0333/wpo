@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+
+        let array = ["Kamna", "Karunesh", "Vishal", "Ankit", "Karan"]
+        console.log(array)
+        console.log("a)Find the length of the given array (students)")
+        console.log("The length is:", array.length)
+
+        console.log("b)Insert (–) after each element.")
+        console.log(array.join("-"))
+
+
+        console.log("c)Array after replacing Kamna with 'Abhishek':");
+        let index = array.indexOf('Kamna');
+        array.splice(index, 1, 'Abhishek');
+        console.log(array)
+
+
+        console.log("d)Is 'Karan' present in the array?")
+        console.log(array.includes('Karan') ? "Yes" : "No");
+
+        console.log("e)Return the position of Abhishek from the array.")
+        console.log(array.indexOf('Abhishek'))
+
+        console.log("f)Insert ‘Aayush’ at index 0 and ‘Aman’ at the last")
+        array.unshift('Ayush')
+        array.push('Aman')
+        console.log(array)
+
+        console.log("g)Remove ‘Aayush’ from index 0 and ‘Aman’ from last")
+        array.shift()
+        array.pop()
+        console.log(array)
+
+        console.log("h)Return String Karunesh, Abhishek, Kartik from array student")
+        let required = array.filter(array => ['Karunesh', 'Abhishek', 'Kartik'].includes(array));
+        console.log(required)
+    </script>
+</body>
+
+</html>
